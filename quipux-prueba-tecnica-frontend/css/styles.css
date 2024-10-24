@@ -1,0 +1,602 @@
+@import url('./global.css');
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #FFFFFF;
+    padding: 1% 2% 1% 5%;
+}
+
+.login {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0.50rem;
+}
+
+.login > .person {
+    font-size: 50px;
+    color: var(--color-gray);        
+}
+
+.login > .arrow {
+    color: var(--color-title);        
+}
+
+.site-main {
+    display: grid;
+    grid-template-columns: 59% 39%;
+    gap: 10rem;  
+    margin: 10rem 10rem 0 3rem;
+}
+
+/* Menu sanduiche */
+.menu-nav {
+    z-index: 10;
+    width: 60px;    
+    height: 100vh;
+    background-color: #414142;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s;
+    overflow: hidden;
+}
+
+.menu-content {
+    margin-top: 10px;
+}
+
+.menu-expanded{
+    width: 200px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    
+}
+
+/* Icones centralizados */
+.menu-item .icon{
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Texto oculto */
+.menu-text {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Mostra o texto quando o menu expandir */
+.menu-expanded .menu-text {
+    opacity: 1;
+}
+
+/* Ajusta a margem do menu expandido */
+.menu-expanded ~ .site-main {
+    margin-left: 200px;
+}
+
+
+/* .main-nav ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: flex-start; 
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    margin-right: 20px; 
+}
+
+.main-nav ul li a {
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold;
+}
+
+.main-nav ul li a:hover {
+    color: #007bff; 
+} */
+
+
+.aside {
+    position: relative; 
+    display: inline-block;
+    flex-direction: column;
+}
+
+.container-aside {
+    background-color: #39A640;
+    max-width: 100%;
+}
+
+.aside img {
+    width: 500px; 
+    height: auto;
+}
+
+.card-dentro {
+    width: 90%;
+    border: 1px solid white;
+    border-left: 5px solid rgba(0, 0, 255, 0.5); /* Borda esquerda azul fosca */
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+.tramites {
+    font-size: 25px;
+    color: var(--color-dark-blue);
+    padding: 0 0 0 1em;
+}
+
+.tramites-texto {
+    font-size: 15px;
+    padding: 0 0 0 2em;
+}
+
+
+.text-overlay {
+    width: 100%;
+    height: 80px;
+    position: absolute; 
+    bottom: 160px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-dark-blue);
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.719)); /* Gradiente branco borrado */
+    padding: 10px 20px;
+    border-radius: 5px; 
+    text-align: center;
+}
+
+.text-overlay-aside {
+    margin: 0; 
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.container-main {
+    padding-left: 80px;
+}
+
+.container-main h3 {
+    font-size: 4.37rem;
+    color: var(--color-blue);
+    padding-left: 40px;
+    font: bold;
+}
+
+
+.container {
+    margin-top: 200px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.btn-outline-primary{
+    border: none;
+    background-color: rgba(21, 91, 243, 0.342);
+}
+
+.btn-outline-secondary{
+    width: 60px;
+    background-color: var(--color-blue);
+}
+
+
+
+.form-control {
+    height: 45px;
+}
+
+.card-title{
+    color: var(--color-dark-blue);
+    font-weight: bold;
+}
+
+.card-text {
+    font-weight: medium; 
+}
+
+.card, .card-footer{
+    border: none;
+    background-color: #ffffff;
+}
+
+
+.card-body {
+    max-width: 100%;
+    width: 30rem;
+}
+
+
+.card-footer .btn {
+    background-color: transparent;
+    border: 1px solid var(--color-green);
+    width: 140px;
+    height: 30px;
+    color: #39A640;
+    font-weight: bold;
+    padding: 0;
+    max-width: 100%;
+    white-space: nowrap;      
+    overflow: hidden;      
+}
+
+
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #FFFFFF;
+    margin-top: 5em;
+    padding: 1% 2% 1% 2%; 
+}
+
+
+/* EMPRESA.CSS */
+
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+body {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.site-header-empresa {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px 20px; 
+    background-color: #FFFFFF; 
+    
+}
+
+.logo {
+    display: flex; 
+    align-items: center; 
+}
+
+.nav-links ul {
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.nav-links li {
+    margin-left: 10px; 
+    position: relative; 
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: black; 
+    padding: 5px 0; 
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: rgba(0, 0, 0, 0.651);
+    font-weight: medium;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #0393FC;
+}
+
+.nav-links li::after {
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    height: 3px; 
+    background-color: #0393FC; 
+    width: 100%; 
+    transform: scaleX(0);
+    transition: transform 0.3s ease; 
+}
+
+
+.nav-links li:hover::after {
+    transform: scaleX(1); 
+}
+
+
+.login {
+    display: flex; 
+    align-items: center; 
+}
+
+.login .person,
+.login .arrow {
+    font-size: 24px; 
+    margin-left: 10px; 
+}
+
+.login-btn {
+    margin: 0 10px; 
+    color: black; 
+}
+
+
+
+
+/* SECTION EMPRESAS */
+
+
+.info-section {
+    display: flex;
+    justify-content: space-between; 
+    flex: 1;
+}
+
+.container-wrapper {
+    display: flex;
+    padding: 30px; 
+    width: 100%; 
+}
+
+.container-wrapper li {
+    list-style-type: none;
+}
+.container-wrapper h2 {
+    font-size: 1rem;
+}
+
+.container-info {
+    margin: 20px; 
+    padding: 20px; 
+    background-color: #FFFFFF;
+    border-radius: 5px; 
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.container-info ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 10px 0; 
+    text-align: center; 
+}
+
+
+.text-bold {
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+
+.footer-empresa {
+    background-color: #FFFFFF; 
+    text-align: center; 
+}
+
+
+/* ARTIGOS */
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+body {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.site-header-artigos {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px 20px; 
+    background-color: #FFFFFF; 
+    
+}
+
+.logo {
+    display: flex; 
+    align-items: center; 
+}
+
+.nav-links ul {
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.nav-links li {
+    margin-left: 10px; 
+    position: relative; 
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: black; 
+    padding: 5px 0; 
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: rgba(0, 0, 0, 0.651);
+    font-weight: medium;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #0393FC;
+}
+
+.nav-links li::after {
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    height: 3px; 
+    background-color: #0393FC; 
+    width: 100%; 
+    transform: scaleX(0);
+    transition: transform 0.3s ease; 
+}
+
+
+.nav-links li:hover::after {
+    transform: scaleX(1); 
+}
+
+
+.login {
+    display: flex; 
+    align-items: center; 
+}
+
+.login .person,
+.login .arrow {
+    font-size: 24px; 
+    margin-left: 10px; 
+}
+
+.login-btn {
+    margin: 0 10px; 
+    color: black; 
+}
+
+
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+}
+
+.container-info{
+    max-width: 100%;
+    height: 90%;
+    background-color: #c7c7c7;
+    padding: 0;
+}
+
+
+
+.contacto {
+    width: 40%; 
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%; 
+}
+
+
+.sections-container {
+    display: flex;
+    flex-direction: column; 
+    width: 50%; 
+    height: 100%; 
+}
+
+
+.top-section,
+.bottom-section {
+    flex: 1; 
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.lista-cards {
+    display: flex;
+    flex-wrap: wrap; /* Faz com que os cards se alinhem em múltiplas linhas, se necessário */
+    gap: 20px; /* Espaçamento entre os cards */
+    justify-content: center; /* Alinha os cards centralizados */
+}
+
+.card {
+    width: 18rem; /* Define a largura dos cards */
+    text-align: center;
+    
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 1em;
+}
+.top-section {
+    background-color: #e9ecef;
+}
+
+
+
+.bottom-section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem a linha */
+    justify-content: flex-start; /* Alinha os cards à esquerda */
+    max-height: 300px; /* Defina uma altura máxima para a seção */
+    overflow-y: auto; /* Habilita o scroll vertical */
+    padding: 10px; /* Espaçamento interno */
+    gap: 10px; /* Espaço entre os cards */
+}
+
+
+.bottom-section{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-section .card {
+    width: 12rem; /* Define a largura do card */
+    text-align: center; /* Centraliza o texto dentro do card */
+    
+}
+
+
+.card-img-top {
+    width: 100px; /* Define uma largura */
+    height: 100px; /* Define uma altura igual à largura */
+    border-radius: 50%; /* Torna a imagem redonda */
+    border: 1px solid black;
+    padding: 20px;
+    object-fit: cover; /* Garante que a imagem não distorça */
+    margin: 0 auto; /* Centraliza a imagem dentro do card */
+    display: block; /* Garante o alinhamento correto */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}

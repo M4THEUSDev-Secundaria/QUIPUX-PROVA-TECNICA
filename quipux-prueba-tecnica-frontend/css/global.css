@@ -1,0 +1,28 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* global variables */
+:root {
+    --color-background: #F6F8FA;
+    --color-body: #F6F8FA;
+    --color-blue: #0393FC;
+    --color-white: #ffffff; 
+    --color-green: #49A958;
+    --color-dark-blue: #034297;
+    --font-first: "Source Sans 3", sans-serif;
+}
+
+body {
+    background-color: var(--color-body);
+    /* overflow: hidden; */
+    
+}
+
+main {
+    font-family: var(--font-first);
+}

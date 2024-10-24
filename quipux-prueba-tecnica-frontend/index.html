@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@40,300,0,0&icon_names=search" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Quipux</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="site-header">
+        <div class="logo">
+            <img src="./resources/logo.png" alt="Logo do Site">
+        </div>
+
+        <div class="login">
+            <span class="material-icons-sharp person">
+                account_circle
+            </span>
+            <p class="login-btn">Usuario Apelido</p>
+            <span class="material-icons-sharp arrow">
+                keyboard_arrow_down
+            </span>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav class="menu-nav">
+        <div class="menu-content">
+            <div id="menu" class="menu-item">
+                <span class="material-icons-sharp icon">
+                    menu
+                </span>
+                <span class="menu-text">QUIPUX</span>
+            </div>
+
+            <!-- Link do menu-->
+            <a href="./empresa.html" class="menu-item">
+                <span class="material-icons-sharp icon">
+                    local_mall
+                </span>
+                <span class="menu-text">Empresas</span>
+            </a>
+
+
+            <a href="./articulos.html" class="menu-item">
+                <span class="material-icons-sharp icon">
+                    description
+                </span>
+                <span class="menu-text">Artigos</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="material-icons-sharp icon">
+                    person
+                </span>
+                <span class="menu-text">Contatos</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <main class="site-main">
+        <section class="container-main">
+            <h3>¿Que quiere s buscar?</h3>
+            <p>Encuentra la información que desees consultar ...</p>
+            <form>
+                <div class="input-group mt-3 mb-3">
+                    <div class="input-group-prepend">
+                        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown">
+                            Todos los servicios
+                        </button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Que servicio quieres consultar">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">
+                            <span class="material-symbols-sharp">
+                                search
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card h-100 d-flex flex-column">
+                            <div class="card-body flex-grow-1">
+                                <h5 class="card-title">Certificado</h5>
+                                <p class="card-text">Conoce los benefícios que tenemos para ti al registrante</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">+ beneficios</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 d-flex flex-column">
+                            <div class="card-body flex-grow-1">
+                                <h5 class="card-title">Crear cuenta</h5>
+                                <p class="card-text">Conoce los benefícios que tenemos para ti al registrante</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Ver todo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 d-flex flex-column">
+                            <div class="card-body flex-grow-1">
+                                <h5 class="card-title">Top trámites</h5>
+                                <p class="card-text">Conoce los trámites más solicitados.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Ver todo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="aside">
+            <img src="./resources/resource-1.png" alt="Mulher" />
+            <div class="text-overlay">
+                <p class="text-overlay-aside">SERVICIOS QUIPUX</p>
+            </div>
+            <div class="card-dentro">
+                <p class="tramites">Trámites en tu mano</p>
+                <p class="tramites-texto">Ahora podrás hacer todos tus trámites desde la comodidad de tu casa, desde cualquier dispositivo computador, table o móvil.</p>
+            </div>
+        </aside>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="logo-footer">
+            <img src="./resources/logo.png" alt="Logo do Site">
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+    <script src="./app.js"></script>
+    <script src="../JavaScript/ConectaApi.js"></script>
+</body>
+
+</html>
